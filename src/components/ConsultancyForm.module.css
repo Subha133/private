@@ -1,6 +1,6 @@
 .section {
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 16px;
 }
 
 .container {
@@ -114,7 +114,8 @@
 
 @media (max-width: 600px) {
     .section {
-        padding: 50px 15px;
+        padding: 10px 0;
+        /* Radically reduced mobile padding */
     }
 
     .container {
