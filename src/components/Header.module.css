@@ -9,6 +9,8 @@
   top: 36px;
   z-index: 1999;
   box-shadow: 0 2px 20px rgba(14, 78, 14, 0.1);
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 .logo img {
@@ -39,15 +41,40 @@
   background: var(--g1);
   color: #fff;
 }
-.call:hover { background: var(--g2); }
+
+.call:hover {
+  background: var(--g2);
+}
 
 .wa {
   background: var(--wa);
   color: #fff;
 }
-.wa:hover { background: #1db954; }
+
+.wa:hover {
+  background: #1db954;
+}
 
 @media (max-width: 500px) {
-  .btn span { display: none; }
-  .btn { padding: 10px 14px; font-size: 0.78rem; }
+  .header {
+    padding: 10px 3%;
+  }
+
+  .logo img {
+    height: 35px;
+  }
+
+  /* Smaller logo on mobile */
+  .btns {
+    gap: 6px;
+  }
+
+  .btn span {
+    display: none;
+  }
+
+  .btn {
+    padding: 8px 10px;
+    font-size: 0.72rem;
+  }
 }
