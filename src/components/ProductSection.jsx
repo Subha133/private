@@ -7,6 +7,7 @@ import hero4 from '../assets/hero-4.jpeg';
 import capsulImg from '../assets/capsul.png';
 import oilImg from '../assets/oil.png';
 import styles from './ProductSection.module.css';
+import ConsultancyForm from './ConsultancyForm';
 
 const GALLERY = [hero1, hero2, hero3, hero4];
 const LANG_LABELS = { en: 'English', hi: 'हिंदी', bn: 'বাংলা' };
@@ -33,6 +34,10 @@ export default function ProductSection() {
               <img src={img} alt={`View ${i + 1}`} />
             </div>
           ))}
+        </div>
+
+        <div className={styles.formContainer}>
+          <ConsultancyForm />
         </div>
       </div>
 

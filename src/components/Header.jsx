@@ -1,15 +1,21 @@
+import { useState } from 'react';
 import logo from '../assets/logo.png';
 import { productData } from '../data';
 import styles from './Header.module.css';
+import ConsultancyModal from './ConsultancyModal';
 
 export default function Header() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <header className={styles.headerWrap}>
       <div className={styles.consultancyStrip}>
         <span className={styles.stripLabel}>Free Consultancy</span>
         <span className={styles.stripText}>Contact Us for Private Knight</span>
         <span className={styles.stripSub}>📩 Free Personalized Consultation</span>
-        <a href="#consultancy-form" className={styles.stripCta}>Submit for Free Consultancy</a>
+        <button onClick={() => setIsModalOpen(true)} className={styles.stripCta}>
+          Submit for Free Consultancy
+        </button>
       </div>
       <div className={styles.header}>
         <div className={styles.logo}>
@@ -24,6 +30,7 @@ export default function Header() {
           </a>
         </div>
       </div>
+      <ConsultancyModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </header>
   );
 }

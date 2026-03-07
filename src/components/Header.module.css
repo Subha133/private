@@ -43,6 +43,9 @@
   font-size: 0.75rem;
   text-decoration: none;
   transition: 0.2s;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .stripCta:hover {
@@ -110,9 +113,14 @@
     font-size: 0.72rem;
   }
 
-  .stripSub { display: none; }
+  .stripSub {
+    display: none;
+  }
 
-  .stripCta { padding: 4px 10px; font-size: 0.7rem; }
+  .stripCta {
+    padding: 4px 10px;
+    font-size: 0.7rem;
+  }
 
   .header {
     padding: 10px 3%;

@@ -363,3 +363,8 @@
     grid-template-columns: 1fr;
   }
 }
+
+.formContainer {
+  margin-top: 32px;
+  width: 100%;
+}
