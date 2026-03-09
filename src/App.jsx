@@ -1,6 +1,7 @@
 import AnnouncementBar from './components/AnnouncementBar';
 import Header from './components/Header';
 import ProductSection from './components/ProductSection';
+import IngredientsSection from './components/IngredientsSection';
 import Licenses from './components/Licenses';
 import ContactSection from './components/ContactSection';
 import {
@@ -22,6 +23,7 @@ export default function App() {
       <AnnouncementBar />
       <Header />
       <ProductSection />
+      <IngredientsSection />
       <Licenses />
       <ContactSection />
       <WhyChoose />

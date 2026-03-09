@@ -12,6 +12,9 @@ export default function Header() {
         </Link>
       </div>
       <div className={styles.btns}>
+        <a href="https://ayurnnath.com/" className={`${styles.btn} ${styles.otherProducts}`} target="_blank" rel="noreferrer">
+          🛒 View Other Products
+        </a>
         <a href={`tel:${productData.phone}`} className={`${styles.btn} ${styles.call}`}>
           📞 Call Now
         </a>
