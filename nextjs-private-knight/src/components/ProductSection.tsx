@@ -153,7 +153,7 @@ export default function ProductSection() {
               <Image src="/assets/PRIVATEKNIGHTCAPSULES.png" alt="Capsules" className={styles.comboImg} fill />
             </div>
             <h4>💊 Private Knight Capsules</h4>
-            <p className={styles.qty}>60 Capsules</p>
+            <p className={styles.qty}>30 Capsules</p>
             <ul>
               {langData.capsuleBenefits.map((b, i) => <li key={i}>{b}</li>)}
             </ul>

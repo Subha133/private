@@ -24,7 +24,7 @@ export const productData = {
     {
       id: "capsules",
       name: "Private Knight Capsules",
-      qty: "60 Capsules",
+      qty: "30 Capsules",
       benefits: ["Boosts Desire & Confidence", "Builds Instant Energy", "Supports Long-Lasting Stamina"],
     },
     {
@@ -90,7 +90,7 @@ export const productData = {
     },
   },
   faq: [
-    { q: "What is inside the Private Knight Combo?", a: "The combo includes Private Knight Capsules (60 caps) and Private Knight Oil (50ml) — a complete Ayurvedic solution for male wellness." },
+    { q: "What is inside the Private Knight Combo?", a: "The combo includes Private Knight Capsules (30 caps) and Private Knight Oil (50ml) — a complete Ayurvedic solution for male wellness." },
     { q: "How do I use the capsules?", a: "Take 1–2 capsules daily with warm milk or water, preferably after meals for best results." },
     { q: "How do I use the oil?", a: "Apply a few drops of Private Knight Oil and massage gently for 5–10 minutes. Use regularly for visible results." },
     { q: "Are there any side effects?", a: "No. The formula uses 100% Ayurvedic, natural herbs with zero chemicals and no known side effects. Safe for long-term use." },
