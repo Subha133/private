@@ -3,6 +3,7 @@ import logo from '../assets/logo.png';
 import { productData } from '../data';
 import styles from './Header.module.css';
 import ConsultancyModal from './ConsultancyModal';
+import { trackWhatsApp } from '../utils';
 
 export default function Header() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,7 +29,7 @@ export default function Header() {
           <a href={`tel:${productData.phone}`} className={`${styles.btn} ${styles.call}`}>
             📞 Call Now
           </a>
-          <a href={`https://wa.me/${productData.whatsapp}`} className={`${styles.btn} ${styles.wa}`} target="_blank" rel="noreferrer">
+          <a href={`https://wa.me/${productData.whatsapp}`} className={`${styles.btn} ${styles.wa}`} target="_blank" rel="noreferrer" onClick={trackWhatsApp}>
             💬 WhatsApp
           </a>
         </div>

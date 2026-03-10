@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { productData } from '@/data';
 import styles from '@/styles/Header.module.css';
+import WhatsAppLink from './WhatsAppLink';
 
 export default function Header() {
   return (
@@ -18,9 +19,9 @@ export default function Header() {
         <a href={`tel:${productData.phone}`} className={`${styles.btn} ${styles.call}`}>
           📞 Call Now
         </a>
-        <a href={`https://wa.me/${productData.whatsapp}`} className={`${styles.btn} ${styles.wa}`} target="_blank" rel="noreferrer">
+        <WhatsAppLink href={`https://wa.me/${productData.whatsapp}`} className={`${styles.btn} ${styles.wa}`} target="_blank" rel="noreferrer">
           💬 WhatsApp
-        </a>
+        </WhatsAppLink>
       </div>
     </header>
   );

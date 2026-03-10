@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { productData } from '@/data';
 import styles from '@/styles/ProductSection.module.css';
+import { trackWhatsApp } from '@/utils';
 
 const GALLERY = [
   '/assets/hero-1.jpeg',
@@ -44,7 +45,7 @@ export default function ProductSection() {
       `-----------------------%0A` +
       `Please contact me for a free consultancy.`;
 
-    window.open(`https://wa.me/${productData.whatsapp}?text=${message}`, '_blank');
+    trackWhatsApp(undefined, `https://wa.me/${productData.whatsapp}?text=${message}`);
   };
 
   return (
@@ -190,7 +191,7 @@ export default function ProductSection() {
           <a href={`tel:${productData.phone}`} className={`${styles.cbtn} ${styles.callBtn}`}>
             📞 Call Now
           </a>
-          <a href={`https://wa.me/${productData.whatsapp}`} className={`${styles.cbtn} ${styles.waBtn}`} target="_blank" rel="noreferrer">
+          <a href={`https://wa.me/${productData.whatsapp}`} className={`${styles.cbtn} ${styles.waBtn}`} target="_blank" rel="noreferrer" onClick={trackWhatsApp}>
             💬 WhatsApp
           </a>
         </div>

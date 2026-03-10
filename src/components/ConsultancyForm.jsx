@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { productData } from '../data';
 import styles from './ConsultancyForm.module.css';
+import { trackWhatsApp } from '../utils';
 
 export default function ConsultancyForm() {
     const [formData, setFormData] = useState({
@@ -19,7 +20,7 @@ export default function ConsultancyForm() {
         const { name, age, phone, concern } = formData;
         const message = `*Free Consultancy Request*%0A%0A*Name:* ${name}%0A*Age:* ${age}%0A*Phone:* ${phone}%0A*Concern:* ${concern}`;
         const whatsappUrl = `https://wa.me/${productData.whatsapp}?text=${message}`;
-        window.open(whatsappUrl, '_blank');
+        trackWhatsApp(undefined, whatsappUrl);
     };
 
     return (

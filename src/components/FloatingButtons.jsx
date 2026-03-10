@@ -1,5 +1,6 @@
 import { productData } from '../data';
 import styles from './FloatingButtons.module.css';
+import { trackWhatsApp } from '../utils';
 
 const WhatsAppIcon = () => (
   <svg
@@ -42,6 +43,7 @@ export default function FloatingButtons() {
         target="_blank"
         rel="noreferrer"
         aria-label="Chat on WhatsApp"
+        onClick={trackWhatsApp}
       >
         <WhatsAppIcon />
         <span className={styles.label}>WhatsApp</span>

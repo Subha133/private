@@ -1,5 +1,6 @@
 import { productData } from '../data';
 import styles from './ContactSection.module.css';
+import { trackWhatsApp } from '../utils';
 
 export default function ContactSection() {
   return (
@@ -16,7 +17,7 @@ export default function ContactSection() {
           <p>Speak directly with our team</p>
           <span className={styles.cta}>TAP TO CALL</span>
         </a>
-        <a href={`https://wa.me/${productData.whatsapp}`} className={`${styles.card} ${styles.waCard}`} target="_blank" rel="noreferrer">
+        <a href={`https://wa.me/${productData.whatsapp}`} className={`${styles.card} ${styles.waCard}`} target="_blank" rel="noreferrer" onClick={trackWhatsApp}>
           <span className={styles.ico}>💬</span>
           <h3>WhatsApp Us</h3>
           <p>Chat with us anytime, instantly</p>

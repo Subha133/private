@@ -8,6 +8,7 @@ import capsulImg from '../assets/capsul.png';
 import oilImg from '../assets/oil.png';
 import styles from './ProductSection.module.css';
 import ConsultancyForm from './ConsultancyForm';
+import { trackWhatsApp } from '../utils';
 
 const GALLERY = [hero1, hero2, hero3, hero4];
 const LANG_LABELS = { en: 'English', hi: 'हिंदी', bn: 'বাংলা' };
@@ -110,7 +111,7 @@ export default function ProductSection() {
             <a href={`tel:${productData.phone}`} className={`${styles.cbtn} ${styles.callBtn}`}>
               📞 Call Now
             </a>
-            <a href={`https://wa.me/${productData.whatsapp}`} className={`${styles.cbtn} ${styles.waBtn}`} target="_blank" rel="noreferrer">
+            <a href={`https://wa.me/${productData.whatsapp}`} className={`${styles.cbtn} ${styles.waBtn}`} target="_blank" rel="noreferrer" onClick={trackWhatsApp}>
               💬 WhatsApp
             </a>
           </div>

@@ -1,5 +1,6 @@
 import { productData } from '../data';
 import styles from './BuySection.module.css';
+import { trackWhatsApp } from '../utils';
 
 export default function BuySection() {
   return (
@@ -16,7 +17,7 @@ export default function BuySection() {
         <a href={`tel:${productData.phone}`} className={styles.ctaBtn} rel="noreferrer">
           📞 Call Now
         </a>
-        <a href={`https://wa.me/${productData.whatsapp}`} className={styles.ctaBtnWa} target="_blank" rel="noreferrer">
+        <a href={`https://wa.me/${productData.whatsapp}`} className={styles.ctaBtnWa} target="_blank" rel="noreferrer" onClick={trackWhatsApp}>
           💬 WhatsApp
         </a>
       </div>
