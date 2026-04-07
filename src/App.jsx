@@ -37,7 +37,7 @@ export default function App() {
       <Dosage />
       <ReviewSection />
       <FAQ />
-      <SecretConsultancy />
+      {/* <SecretConsultancy /> */}
       <BuySection />
       <Footer />
       <FloatingButtons />
