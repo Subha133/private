@@ -55,7 +55,7 @@
 .header {
   background: var(--white);
   border-bottom: 2px solid var(--border);
-  padding: 14px 5%;
+  padding: 2px 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -1,6 +1,8 @@
 import AnnouncementBar from './components/AnnouncementBar';
 import Header from './components/Header';
+import HighlightText from './components/HighlightText';
 import ProductSection from './components/ProductSection';
+import SecretConsultancy from './components/SecretConsultancy';
 import IngredientsSection from './components/IngredientsSection';
 import Licenses from './components/Licenses';
 import ContactSection from './components/ContactSection';
@@ -22,6 +24,8 @@ export default function App() {
     <>
       <AnnouncementBar />
       <Header />
+      <HighlightText />
+      <SecretConsultancy />
       <ProductSection />
       <IngredientsSection />
       <Licenses />
@@ -33,6 +37,7 @@ export default function App() {
       <Dosage />
       <ReviewSection />
       <FAQ />
+      <SecretConsultancy />
       <BuySection />
       <Footer />
       <FloatingButtons />

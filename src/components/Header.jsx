@@ -26,12 +26,12 @@ export default function Header() {
           <a href="https://ayurnnath.com/" className={`${styles.btn} ${styles.otherProducts}`} target="_blank" rel="noreferrer">
             🛒 View Other Products
           </a>
-          <a href={`tel:${productData.phone}`} className={`${styles.btn} ${styles.call}`}>
+          {/* <a href={`tel:${productData.phone}`} className={`${styles.btn} ${styles.call}`}>
             📞 Call Now
           </a>
           <a href={`https://wa.me/${productData.whatsapp}`} className={`${styles.btn} ${styles.wa}`} target="_blank" rel="noreferrer" onClick={trackWhatsApp}>
             💬 WhatsApp
-          </a>
+          </a> */}
         </div>
       </div>
       <ConsultancyModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
